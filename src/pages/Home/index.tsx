@@ -97,13 +97,16 @@ const Home: React.FC = () => {
           </Card>
         </Carousel.Item>
         <Carousel.Item>
-          <Card>
-            <Card.Body>
-              <Card.Title>Veja outras dicas</Card.Title>
-              <Button variant="primary" onClick={viewHint}>Veja mais</Button>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
+  <Card className="text-center">
+    <Card.Body>
+      <Card.Title>Veja outras dicas</Card.Title>
+      <div className="d-flex justify-content-center">
+        <Button variant="primary" onClick={viewHint}>Veja mais</Button>
+      </div>
+    </Card.Body>
+  </Card>
+</Carousel.Item>
+
       </Carousel>
 
       <footer className="text-center mt-5 py-4 bg-light">
