@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   }
 
   async function findHint1() {
-    const response = await api.get<IHint>(`/hints/`);
+    const response = await api.get<IHint>(`/hints/1`);
     setHint1(response.data);
   }
 
@@ -37,6 +37,10 @@ const Home: React.FC = () => {
     const response = await api.get<IHint>(`/hints/3`);
     setHint3(response.data);
   }
+
+  function viewHint(){
+    history.push("/dicas")
+}
 
   useEffect(() => {
     findHint1();
@@ -95,14 +99,14 @@ const Home: React.FC = () => {
         <Carousel.Item>
           <Card>
             <Card.Body>
-              <Card.Title>Veja Mais</Card.Title>
-              <Button variant="primary">Veja mais</Button>
+              <Card.Title>Veja outras dicas</Card.Title>
+              <Button variant="primary" onClick={viewHint}>Veja mais</Button>
             </Card.Body>
           </Card>
         </Carousel.Item>
       </Carousel>
 
-      <footer className="text-center py-4 bg-light">
+      <footer className="text-center mt-5 py-4 bg-light">
         <Container>
           <p>&copy; 2023 FIAPlantação. Todos os direitos reservados.</p>
         </Container>
