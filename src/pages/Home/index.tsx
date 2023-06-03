@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, Button, Carousel } from 'react-bootstrap';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +13,13 @@ const Home: React.FC = () => {
         </Card.Body>
       </Card>
 
-      <Carousel>
+      <h2>Sobre</h2>
+      <p>Bem-vindo ao nosso site! Aqui na FIAPlantação, nos dedicamos a promover práticas de agricultura sustentável para um futuro mais verde e saudável. Nossa missão é fornecer dicas valiosas e informações relevantes sobre cultivo orgânico, conservação de recursos naturais e técnicas ecoamigáveis. Acreditamos que cada um de nós pode fazer a diferença, e é por isso que estamos comprometidos em compartilhar conhecimento e inspirar a comunidade agrícola a adotar práticas sustentáveis. Explore nosso site e descubra como você pode se envolver nessa jornada rumo a um mundo mais sustentável e abundante.</p>
+
+      <Carousel
+        prevIcon={<BsChevronLeft />}
+        nextIcon={<BsChevronRight />}
+      >
         <Carousel.Item>
           <Card>
             <Card.Body>
@@ -55,12 +62,6 @@ const Home: React.FC = () => {
           </Card>
         </Carousel.Item>
       </Carousel>
-
-      <h2>Sobre</h2>
-      <p>Bem-vindo ao nosso site! Aqui na FIAPlantação, nos dedicamos a promover práticas de agricultura sustentável para um futuro mais verde e saudável. Nossa missão é fornecer dicas valiosas e informações relevantes sobre cultivo orgânico, conservação de recursos naturais e técnicas ecoamigáveis. Acreditamos que cada um de nós pode fazer a diferença, e é por isso que estamos comprometidos em compartilhar conhecimento e inspirar a comunidade agrícola a adotar práticas sustentáveis. Explore nosso site e descubra como você pode se envolver nessa jornada rumo a um mundo mais sustentável e abundante.</p>
-
-      <h2>Contato</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu purus in leo molestie auctor. Sed vitae consectetur velit. Fusce maximus nunc enim, nec rutrum justo fermentum a. Suspendisse potenti. Curabitur consectetur metus a ante lobortis commodo.</p>
 
       <footer className="text-center py-4 bg-light">
         <Container>
