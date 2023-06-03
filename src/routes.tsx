@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Hints from "./pages/Hints";
 import HintsForm from "./pages/Hints/Form";
 import HintsDetail from './pages/Hints/Detail';
+import Sobre from "./pages/Sobre";
+import Links from "./pages/Links";
 const Routes: React.FC = () => {
     return(
         <Switch>
@@ -12,6 +14,8 @@ const Routes: React.FC = () => {
             <Route path="/dicas_cadastro" exact component={HintsForm} />
             <Route path="/dicas_cadastro/:id" exact component={HintsForm} />
             <Route path="/dicas/:id" exact component={HintsDetail} />
+            <Route path="/sobre" exact component={Sobre} />
+            <Route path="/links" exact component={Links} />
         </Switch>
     );
 }
