@@ -1,8 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { Container, Card, Button, Carousel } from 'react-bootstrap';
-import { BsFillCircleFill } from 'react-icons/bs';
+import { useHistory, useParams } from "react-router-dom"
+import "./index.css";
+import api from "../../services/api";
+
+interface IHint {
+  id: number;
+  title: string;
+  description: string;
+  liked: boolean;
+  created_at: Date;
+  updated_at: Date;
+}
 
 const Home: React.FC = () => {
+  const history = useHistory();
+  const { id } = useParams<{ id: string }>();
+  const [hint1, setHint1] = useState<IHint>();
+  const [hint2, setHint2] = useState<IHint>();
+  const [hint3, setHint3] = useState<IHint>();
+
+  function back() {
+    history.goBack();
+  }
+
+  async function findHint1() {
+    const response = await api.get<IHint>(`/hints/`);
+    setHint1(response.data);
+  }
+
+  async function findHint2() {
+    const response = await api.get<IHint>(`/hints/2`);
+    setHint2(response.data);
+  }
+
+  async function findHint3() {
+    const response = await api.get<IHint>(`/hints/3`);
+    setHint3(response.data);
+  }
+
+  useEffect(() => {
+    findHint1();
+    findHint2();
+    findHint3();
+  }, []);
+
   return (
     <Container>
       <Card className="text-center" style={{ maxWidth: '400px', margin: 'auto' }}>
@@ -24,9 +66,9 @@ const Home: React.FC = () => {
         <Carousel.Item>
           <Card>
             <Card.Body>
-              <Card.Title>Título do Card 1</Card.Title>
+              <Card.Title>{hint1?.title}</Card.Title>
               <Card.Text>
-                Conteúdo curto do Card 1
+                {hint1?.description}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -34,9 +76,9 @@ const Home: React.FC = () => {
         <Carousel.Item>
           <Card>
             <Card.Body>
-              <Card.Title>Título do Card 2</Card.Title>
+              <Card.Title>{hint2?.title}</Card.Title>
               <Card.Text>
-                Conteúdo curto do Card 2
+                {hint2?.description}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -44,9 +86,9 @@ const Home: React.FC = () => {
         <Carousel.Item>
           <Card>
             <Card.Body>
-              <Card.Title>Título do Card 3</Card.Title>
+              <Card.Title>{hint3?.title}</Card.Title>
               <Card.Text>
-                Conteúdo curto do Card 3
+              {hint3?.description}
               </Card.Text>
             </Card.Body>
           </Card>
