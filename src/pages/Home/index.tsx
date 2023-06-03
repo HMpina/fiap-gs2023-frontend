@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       >
         <Carousel.Item>
           <Card>
-            <Card.Body>
+            <Card.Body className="mx-3">
               <Card.Title>Título do Card 1</Card.Title>
               <Card.Text>
                 Conteúdo curto do Card 1
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Card>
-            <Card.Body>
+            <Card.Body className="mx-3">
               <Card.Title>Título do Card 2</Card.Title>
               <Card.Text>
                 Conteúdo curto do Card 2
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Card>
-            <Card.Body>
+            <Card.Body className="mx-3">
               <Card.Title>Título do Card 3</Card.Title>
               <Card.Text>
                 Conteúdo curto do Card 3
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Card>
-            <Card.Body>
+            <Card.Body className="mx-3">
               <Card.Title>Veja Mais</Card.Title>
               <Button variant="primary">Veja mais</Button>
             </Card.Body>
