@@ -4,7 +4,8 @@ import { useHistory } from "react-router-dom";
 import api from "../../services/api";
 import moment from "moment";
 import "./Form/index.css";
-import { BsTrashFill } from "react-icons/bs"; // Importação do ícone de lixeira
+import { BsTrashFill, BsPencilSquare, BsHandThumbsUp, BsFillEyeFill } from "react-icons/bs"; // Importação de ícones
+
 
  
 interface IHint{
@@ -81,11 +82,17 @@ const Hints: React.FC = () => {
                                 <td>{formatDate(hint.updated_at)}</td>
                                 <td>{hint.liked ? "Curtido" : "Não curtido"}</td>
                                 <td>
-                                    <Button size="sm" variant="primary" onClick={() => editHint(hint.id)}>Editar</Button>{' '}
-                                    <Button size="sm" variant="success" onClick={() => likedHint(hint.id)}>Curtir</Button>{' '}
-                                    <Button size="sm" variant="warning" onClick={() => viewHint(hint.id)}>Visualizar</Button>{' '}
+                                    <Button size="sm" variant="primary" onClick={() => editHint(hint.id)}>
+                                        <BsPencilSquare /> {/* Ícone de lápis */} Editar
+                                        </Button>{' '}
+                                    <Button size="sm" variant="success" onClick={() => likedHint(hint.id)}>
+                                        <BsHandThumbsUp /> {/* Ícone de joinha */} Curtir
+                                    </Button>{' '}
+                                    <Button size="sm" variant="warning" onClick={() => viewHint(hint.id)}>
+                                        <BsFillEyeFill /> {/* Ícone de joinha */} Visualizar
+                                    </Button>{' '}
                                     <Button size="sm" variant="danger" onClick={() => deleteHint(hint.id)}>
-                                        <BsTrashFill /> {/* Ícone de lixeira */}
+                                        <BsTrashFill /> {/* Ícone de lixeira */} Excluir
                                     </Button>{" "}
                                 </td>
                             </tr>
