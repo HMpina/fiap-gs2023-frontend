@@ -66,7 +66,7 @@ const Home: React.FC = () => {
       <Carousel
         prevIcon={null}
         nextIcon={null}
-        indicators
+        indicators={false}
       >
         <Carousel.Item>
           <Card className="card-fiap">

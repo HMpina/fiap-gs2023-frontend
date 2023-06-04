@@ -11,20 +11,6 @@
   color: #1A1A16;
 }
 
-.carousel-indicators {
-    position: absolute;
-    bottom: -50px;
-    z-index: 1;
-}
-
-.carousel-indicators li.active {
-  background-color: #ed195c;
-}
-
-.carousel-indicators li {
-  background-color: #EFDCF5;
-}
-
 .button-fiap {
     background-color: #ED195C;
     color: #333333;
@@ -34,7 +20,3 @@
   .card-fiap {
     border-color: #ED195C;
   }
-  
-.text-yellow1{
-  color: #F8F8DB;
-}
