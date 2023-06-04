@@ -13,7 +13,7 @@
 
 .carousel-indicators {
     position: absolute;
-    bottom: -10px;
+    bottom: -30px;
     z-index: 1;
     background-color: #ed195c;
 }
