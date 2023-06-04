@@ -109,12 +109,6 @@ const Home: React.FC = () => {
 </Carousel.Item>
 
       </Carousel>
-
-      <footer className="text-center mt-5 py-4 bg-light">
-        <Container>
-          <p>&copy; 2023 FIAPlantação. Todos os direitos reservados.</p>
-        </Container>
-      </footer>
     </Container>
   );
 }
