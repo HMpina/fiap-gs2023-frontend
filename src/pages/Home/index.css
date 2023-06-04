@@ -6,7 +6,8 @@
     min-height: 250px;
 }
 
-ol.carousel-indicators {
-    justify-content: end;
+.carousel-indicators {
+    position: static;
+    bottom: 0;
   }
   
