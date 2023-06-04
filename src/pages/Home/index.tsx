@@ -65,6 +65,7 @@ const Home: React.FC = () => {
       <Carousel
         prevIcon={null}
         nextIcon={null}
+        indicators
       >
         <Carousel.Item>
           <Card>

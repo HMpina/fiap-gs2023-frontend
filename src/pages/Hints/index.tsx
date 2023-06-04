@@ -4,6 +4,8 @@ import { useHistory } from "react-router-dom";
 import api from "../../services/api";
 import moment from "moment";
 import "./Form/index.css";
+import { BsTrashFill } from "react-icons/bs"; // Importação do ícone de lixeira
+
  
 interface IHint{
     id: number;
@@ -82,7 +84,9 @@ const Hints: React.FC = () => {
                                     <Button size="sm" variant="primary" onClick={() => editHint(hint.id)}>Editar</Button>{' '}
                                     <Button size="sm" variant="success" onClick={() => likedHint(hint.id)}>Curtir</Button>{' '}
                                     <Button size="sm" variant="warning" onClick={() => viewHint(hint.id)}>Visualizar</Button>{' '}
-                                    <Button size="sm" variant="danger" onClick={() => deleteHint(hint.id)}>Remover</Button>{' '}
+                                    <Button size="sm" variant="danger" onClick={() => deleteHint(hint.id)}>
+                                        <BsTrashFill /> {/* Ícone de lixeira */}
+                                    </Button>{" "}
                                 </td>
                             </tr>
                         ))

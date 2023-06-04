@@ -1,7 +1,13 @@
 .jumbocard{
     background: linear-gradient(135deg, #2BA3FA, #27EACC);
     color: #F8F8F8;
-    maxWidth: '400px';
-    margin: 'auto';
-    min-height: '250px';
+    max-width: 80%;
+    margin: auto
+    ;
+    min-height: 250px;
 }
+
+ol.carousel-indicators {
+    justify-content: end;
+  }
+  
