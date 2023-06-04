@@ -51,7 +51,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <Container>
+    <Container className="bg-medium">
       <Card className="text-center my-4 jumbocard">
         <Card.Body className="d-flex flex-column align-items-center">
           <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
