@@ -52,11 +52,10 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Card className="text-center my-3 jumbocard" style={{ maxWidth: '400px', margin: 'auto' }}>
+      <Card className="text-center my-4 jumbocard">
         <Card.Body>
           <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
           <Card.Text>Compartilhe dicas sobre agricultura sustentável</Card.Text>
-          <Button variant="primary" href="#about">Saiba mais</Button>
         </Card.Body>
       </Card>
 
