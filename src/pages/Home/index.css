@@ -8,16 +8,16 @@
 }
 
 .carousel-indicators {
-    position: relative;
+    position: absolute;
     bottom: 20px;
     z-index: 1;
     background-color: #ed195c;
-    border: 0;
 }
 
 .button-fiap {
     background-color: #ED195C;
     color: #333333;
+    border: 0;
 }
   
   .card-fiap {
