@@ -10,7 +10,8 @@
 .carousel-indicators {
     position: static;
     bottom: 0;
-    color: #ED195C;
+    background-color: #ed195c;
+    border: 0;
 }
 
 .button-fiap {
