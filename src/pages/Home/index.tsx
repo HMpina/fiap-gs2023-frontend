@@ -54,7 +54,7 @@ const Home: React.FC = () => {
     <Container>
       <Card className="text-center my-4 jumbocard">
         <Card.Body className="d-flex flex-column align-items-center">
-          <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
+          <Card.Title className="text-yellow1">Bem-vindo ao FIAPlantação</Card.Title>
           <Card.Text>Compartilhe dicas sobre agricultura sustentável</Card.Text>
         </Card.Body>
       </Card>
@@ -62,6 +62,7 @@ const Home: React.FC = () => {
       <h2>Sobre</h2>
       <p>Bem-vindo ao nosso site! Aqui na FIAPlantação, nos dedicamos a promover práticas de agricultura sustentável para um futuro mais verde e saudável. Nossa missão é fornecer dicas valiosas e informações relevantes sobre cultivo orgânico, conservação de recursos naturais e técnicas ecoamigáveis. Acreditamos que cada um de nós pode fazer a diferença, e é por isso que estamos comprometidos em compartilhar conhecimento e inspirar a comunidade agrícola a adotar práticas sustentáveis. Explore nosso site e descubra como você pode se envolver nessa jornada rumo a um mundo mais sustentável e abundante.</p>
 
+      <h2 className="mt-4">Dicas de agricultura sustentável</h2>
       <Carousel
         prevIcon={null}
         nextIcon={null}

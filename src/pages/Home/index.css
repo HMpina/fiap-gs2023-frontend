@@ -1,15 +1,19 @@
 .jumbocard{
     background: linear-gradient(135deg, #08D6FF, #0DDE9B);
-    color: #F8F8F8;
+    color: #1A1A16;
     max-width: 80%;
     margin: auto;
     min-height: 100px;
     border: 0;
 }
 
+.container{
+  color: #1A1A16;
+}
+
 .carousel-indicators {
     position: absolute;
-    bottom: 20px;
+    bottom: -10px;
     z-index: 1;
     background-color: #ed195c;
 }
@@ -24,3 +28,6 @@
     border-color: #ED195C;
   }
   
+.text-yellow1{
+  color: #F8F8DB;
+}
