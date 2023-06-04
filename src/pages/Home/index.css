@@ -8,8 +8,9 @@
 }
 
 .carousel-indicators {
-    position: static;
-    bottom: 0;
+    position: relative;
+    bottom: 20px;
+    z-index: 1;
     background-color: #ed195c;
     border: 0;
 }
