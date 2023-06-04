@@ -58,6 +58,7 @@ const Detail: React.FC = () => {
                     <br />
                     <strong>Data de Atualização: </strong>
                     {moment(hint?.updated_at).format('DD/MM/YYYY')}
+                    <br />
                     <Button size="sm" variant="primary" onClick={() => editHint(hint!.id)}>
                                         <BsPencilSquare /> {/* Ícone de lápis */} Editar
                                         </Button>{' '}

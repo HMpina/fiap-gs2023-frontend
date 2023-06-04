@@ -79,7 +79,7 @@ const Hints: React.FC = () => {
                                 <td>{formatDate(hint.updated_at)}</td>
                                 <td>{hint.liked ? "Otimizado" : "Não otimizadoo"}</td>
                                 <td>
-                                    <Button size="sm" variant="light" onClick={() => viewHint(hint.id)}>
+                                    <Button style={{background: 'none'}} size="sm" variant="light" onClick={() => viewHint(hint.id)}>
                                         <BsFillEyeFill /> {/* Ícone de joinha */} Visualizar
                                     </Button>{' '}
                                     <Button size="sm" variant="primary" onClick={() => likedHint(hint.id)}>
