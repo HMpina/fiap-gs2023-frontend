@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
 import { BsGithub } from "react-icons/bs";
-import { IoLogoHeroku } from 'react-icons/io';
+import { SiHeroku } from 'react-icons/si';
 
 
 const Links: React.FC = () => {
@@ -20,10 +20,10 @@ const Links: React.FC = () => {
           <p className="my-4">
         Veja também em produção:
         <a href="https://fiap-gs-frontend.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <IoLogoHeroku /> frontend
+          <SiHeroku /> frontend
         </a>
         <a href="https://fiap-globalsolut2023-backend.herokuapp.com/hints" target="_blank" rel="noopener noreferrer">
-          <IoLogoHeroku /> backend
+          <SiHeroku /> backend
         </a>
       </p>
 
