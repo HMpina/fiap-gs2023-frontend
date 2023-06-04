@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Card className="text-center" style={{ maxWidth: '400px', margin: 'auto' }}>
+      <Card className="text-center jumbocard" style={{ maxWidth: '400px', margin: 'auto' }}>
         <Card.Body>
           <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
           <Card.Text>Compartilhe dicas sobre agricultura sustentável</Card.Text>
