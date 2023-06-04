@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <Container>
         <p><b>&copy; 2023 FIAPlantação.</b> Todos os direitos reservados.</p>
         <p className="mt-2">Henrique Aslan Marques Pina   RA92542</p>
-        <a href="https://fiap-gs-frontend.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://fiap-gs-frontend.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
               <BsGithub /> HMpina
             </a>
       </Container>
