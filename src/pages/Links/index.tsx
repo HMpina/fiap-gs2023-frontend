@@ -8,7 +8,7 @@ const Links: React.FC = () => {
     return (
         <Container>
           <h2 className="mt-4">Links importantes</h2>
-          <p className="mt-4">
+          <p className="mt-5">
             Confira nossos repositório no GitHub:
           </p>
           <p>
@@ -21,7 +21,7 @@ const Links: React.FC = () => {
               <BsGithub /> backend
             </a>
           </p>
-          <p className="my-4">
+          <p className="mt-5">
             Veja também em produção:
           </p>
           <p>

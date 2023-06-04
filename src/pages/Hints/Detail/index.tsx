@@ -44,7 +44,7 @@ const Detail: React.FC = () => {
                     <Card.Text>
                     {hint?.description}
                     <br/>
-                    {hint?.liked ? "Curtido" : "Não curtido"}
+                    {hint?.liked ? "Otimizado" : "Não otimizado"}
                     <br />
                     <strong>Data de Cadastro: </strong>
                     {moment(hint?.created_at).format('DD/MM/YYYY')}

@@ -59,7 +59,7 @@ const Hints: React.FC = () => {
         <div className="container">
             <br />
             <div className="hint-header">
-                <h1>Dicas</h1>
+                <h2>Dicas</h2>
                 <Button variant="dark" size="sm" onClick={newHint}>Nova Dica</Button>
             </div>
             <br />
@@ -69,7 +69,7 @@ const Hints: React.FC = () => {
                     <th>ID</th>
                     <th>Título</th>
                     <th>Data de Atualização</th>
-                    <th>Status</th>
+                    <th>FHIR?</th>
                     <th>Ações</th>
                     </tr>
                 </thead>
@@ -80,19 +80,19 @@ const Hints: React.FC = () => {
                                 <td>{hint.id}</td>
                                 <td>{hint.title}</td>
                                 <td>{formatDate(hint.updated_at)}</td>
-                                <td>{hint.liked ? "Curtido" : "Não curtido"}</td>
+                                <td>{hint.liked ? "Otimizado" : "Não otimizadoo"}</td>
                                 <td>
                                     <Button size="sm" variant="primary" onClick={() => editHint(hint.id)}>
                                         <BsPencilSquare /> {/* Ícone de lápis */} Editar
                                         </Button>{' '}
                                     <Button size="sm" variant="success" onClick={() => likedHint(hint.id)}>
-                                        <BsHandThumbsUp /> {/* Ícone de joinha */} Curtir
+                                        <BsHandThumbsUp /> {/* Ícone de joinha */} Otimizar para FHIR
                                     </Button>{' '}
                                     <Button size="sm" variant="warning" onClick={() => viewHint(hint.id)}>
                                         <BsFillEyeFill /> {/* Ícone de joinha */} Visualizar
                                     </Button>{' '}
-                                    <Button size="sm" variant="danger" onClick={() => deleteHint(hint.id)}>
-                                        <BsTrashFill /> {/* Ícone de lixeira */} Excluir
+                                    <Button size="sm" variant="outline-danger" onClick={() => deleteHint(hint.id)}>
+                                        <BsTrashFill /> {/* Ícone de lixeira */}
                                     </Button>{" "}
                                 </td>
                             </tr>

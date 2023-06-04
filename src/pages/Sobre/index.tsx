@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const Sobre: React.FC = () => {
   return (
     <Container>
-      <h2>Sobre nós</h2>
+      <h2 className='my-4'>Sobre nós</h2>
       <p className='my-3'>
         Somos a FIAPlantação, uma equipe apaixonada pela agricultura sustentável e comprometida em promover um futuro mais verde e saudável. Nossa jornada começou com a visão de criar um ambiente agrícola que respeite a natureza, conserve os recursos naturais e forneça alimentos saudáveis para todos.
       </p>
