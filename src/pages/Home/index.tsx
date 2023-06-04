@@ -52,7 +52,7 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Card className="text-center my-4 jumbocard">
+      <Card className="text-center my-4 jumbocard d-flex align-items-center">
         <Card.Body>
           <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
           <Card.Text>Compartilhe dicas sobre agricultura sustentável</Card.Text>
