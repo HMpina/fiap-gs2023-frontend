@@ -68,7 +68,7 @@ const Home: React.FC = () => {
         indicators
       >
         <Carousel.Item>
-          <Card>
+          <Card className="card-fiap">
             <Card.Body>
               <Card.Title>{hint1?.title}</Card.Title>
               <Card.Text>
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           </Card>
         </Carousel.Item>
         <Carousel.Item>
-          <Card>
+          <Card className="card-fiap">
             <Card.Body>
               <Card.Title>{hint2?.title}</Card.Title>
               <Card.Text>
@@ -88,7 +88,7 @@ const Home: React.FC = () => {
           </Card>
         </Carousel.Item>
         <Carousel.Item>
-          <Card>
+          <Card className="card-fiap">
             <Card.Body>
               <Card.Title>{hint3?.title}</Card.Title>
               <Card.Text>
@@ -98,11 +98,11 @@ const Home: React.FC = () => {
           </Card>
         </Carousel.Item>
         <Carousel.Item>
-  <Card className="text-center">
+  <Card className="card-fiap text-center">
     <Card.Body>
       <Card.Title>Veja outras dicas</Card.Title>
       <div className="d-flex justify-content-center">
-        <Button variant="primary" onClick={viewHint}>Veja mais</Button>
+        <Button className="button-fiap" onClick={viewHint}>Veja mais</Button>
       </div>
     </Card.Body>
   </Card>

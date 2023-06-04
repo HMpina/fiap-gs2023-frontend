@@ -1,13 +1,27 @@
 .jumbocard{
-    background: linear-gradient(135deg, #2BA3FA, #27EACC);
+    background: linear-gradient(135deg, #08D6FF, #0DDE9B);
     color: #F8F8F8;
     max-width: 80%;
     margin: auto;
-    min-height: 250px;
+    min-height: 100px;
 }
 
 .carousel-indicators {
     position: static;
     bottom: 0;
+}
+
+.container {
+    background-color: #e7f8ea;
+}
+
+.button-fiap {
+    background-color: #E66EB2;
+    color: #333333;
+}
+  
+  .card-fiap {
+    border-color: #E66EB2;
   }
+  
   
