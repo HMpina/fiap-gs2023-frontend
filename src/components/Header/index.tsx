@@ -6,8 +6,8 @@ import "./index.css";
 
 const Header: React.FC = () => {
     return(
-        <Navbar expand="lg">
-        <Container className='bg-green1'>
+        <Navbar className='bg-green1' expand="lg">
+        <Container>
             <Navbar.Brand as={Link} to="/">
                 <img src={logo} alt="Logo com um formato do contorno de um ramo com folhas e o texto FIAPlantação" className="logo-img" />
             </Navbar.Brand>
