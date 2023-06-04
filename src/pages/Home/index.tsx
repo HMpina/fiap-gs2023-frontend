@@ -52,8 +52,8 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Card className="text-center my-4 jumbocard d-flex align-items-center">
-        <Card.Body>
+      <Card className="text-center my-4 jumbocard d-flex">
+        <Card.Body className="d-flex flex-column align-items-center">
           <Card.Title>Bem-vindo ao FIAPlantação</Card.Title>
           <Card.Text>Compartilhe dicas sobre agricultura sustentável</Card.Text>
         </Card.Body>
