@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import api from "../../services/api";
 import moment from "moment";
 import "./Form/index.css";
-import { BsTrashFill, BsPencilSquare, BsHandThumbsUp, BsFillEyeFill } from "react-icons/bs"; // Importação de ícones
+import { BsTrashFill, BsHandThumbsUp, BsFillEyeFill } from "react-icons/bs"; // Importação de ícones
 
 
  
@@ -40,9 +40,6 @@ const Hints: React.FC = () => {
         history.push(`/dicas_cadastro`)
     }
  
-    function editHint(id: number){
-        history.push(`/dicas_cadastro/${id}`)
-    }
     function viewHint(id: number){
         history.push(`/dicas/${id}`)
     }
@@ -82,14 +79,11 @@ const Hints: React.FC = () => {
                                 <td>{formatDate(hint.updated_at)}</td>
                                 <td>{hint.liked ? "Otimizado" : "Não otimizadoo"}</td>
                                 <td>
-                                    <Button size="sm" variant="primary" onClick={() => editHint(hint.id)}>
-                                        <BsPencilSquare /> {/* Ícone de lápis */} Editar
-                                        </Button>{' '}
-                                    <Button size="sm" variant="success" onClick={() => likedHint(hint.id)}>
-                                        <BsHandThumbsUp /> {/* Ícone de joinha */} Otimizar para FHIR
-                                    </Button>{' '}
-                                    <Button size="sm" variant="warning" onClick={() => viewHint(hint.id)}>
+                                    <Button size="sm" variant="light" onClick={() => viewHint(hint.id)}>
                                         <BsFillEyeFill /> {/* Ícone de joinha */} Visualizar
+                                    </Button>{' '}
+                                    <Button size="sm" variant="primary" onClick={() => likedHint(hint.id)}>
+                                        <BsHandThumbsUp /> {/* Ícone de joinha */} Otimizar para FHIR
                                     </Button>{' '}
                                     <Button size="sm" variant="outline-danger" onClick={() => deleteHint(hint.id)}>
                                         <BsTrashFill /> {/* Ícone de lixeira */}

@@ -4,6 +4,8 @@ import { useHistory, useParams } from "react-router-dom"
 import "./index.css";
 import api from "../../../services/api";
 import moment from "moment";
+import { BsPencilSquare } from "react-icons/bs"; // Importação de ícones
+
 interface IHint{
     id: number;
     title: string;
@@ -29,6 +31,11 @@ const Detail: React.FC = () => {
     useEffect(() => {
         findHint()
     }, [id])
+
+    function editHint(id: number){
+        history.push(`/dicas_cadastro/${id}`)
+    }
+
     return (
         <div className="container">
             <br />
@@ -51,6 +58,9 @@ const Detail: React.FC = () => {
                     <br />
                     <strong>Data de Atualização: </strong>
                     {moment(hint?.updated_at).format('DD/MM/YYYY')}
+                    <Button size="sm" variant="primary" onClick={() => editHint(hint!.id)}>
+                                        <BsPencilSquare /> {/* Ícone de lápis */} Editar
+                                        </Button>{' '}
                     </Card.Text>
                 </Card.Body>
             </Card>
