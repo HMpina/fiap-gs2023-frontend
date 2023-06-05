@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const FHIR: React.FC = () => {
   return (
     <Container>
-      <h2 className='my-4'>Vantagens do FHIR</h2>
+      <h2 className='my-4'>Usos para o FHIR</h2>
       <h4 className='my-3'>Indicação do problema:</h4>
         <p>
             Um problema comum na agricultura sustentável é a falta de compartilhamento eficiente de dados entre os agricultores, pesquisadores e especialistas. Muitas vezes, essas informações estão dispersas em diferentes sistemas e formatos, dificultando a colaboração e a busca por soluções inovadoras. A falta de um sistema unificado impede o acesso rápido a dados relevantes, limitando o potencial de aprendizado e melhoria contínua.
